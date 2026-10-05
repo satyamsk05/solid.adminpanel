@@ -65,7 +65,7 @@ export default function AdminPage() {
   const [toastMsg, setToastMsg] = useState<string | null>(null);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
 
-  const API_BASE = 'http://localhost:5001/api';
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL || '/api/proxy';
 
   useEffect(() => {
     const saved = localStorage.getItem('crypto_admin_key');
