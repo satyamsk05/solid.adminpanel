@@ -49,7 +49,7 @@ interface WithdrawalItem {
 
 export default function AdminPage() {
   const [adminKey, setAdminKey] = useState<string>('');
-  const [inputKey, setInputKey] = useState<string>('super-admin-secret-2026');
+  const [inputKey, setInputKey] = useState<string>('');
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<'deposits' | 'withdrawals' | 'settings'>('deposits');
 
